@@ -1,0 +1,18 @@
+table{
+    color:#3ebcb8;
+    font-family:cursive;
+  
+}
+th{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 10px;
+}
+td{
+    color:#193d3b;
+    font-family: serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}

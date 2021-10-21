@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="1200px" height="1200px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <text x = "100" y = "100" font-size="50">Анимация
+      <animate attributeName="fill" from="DarkRed" to="Orange" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x" from="100" to="900" dur="5s" repeatCount="indefinite"/>
+    </text>
+</svg>

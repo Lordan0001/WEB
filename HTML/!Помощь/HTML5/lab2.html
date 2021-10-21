@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function fun1()
+            {
+                var canvas = document.getElementById("gist");
+                var x = canvas.getContext("2d");
+                x.moveTo(450,450);
+                x.lineTo(50,450);
+                x.lineTo(50,50);
+                x.stroke();
+                x.font='20px Verdana';
+                x.fillStyle='rgb(0,0,0)';
+                x.fillText("Гистограмма", 220, 40);
+                x.fillText("    1", 5, 420);
+                x.fillText("    2", 5, 320);
+                x.fillText("    3", 5, 220);
+                x.fillText("    4", 5, 120);
+                x.fillStyle='lime';
+                x.fillRect(60,350,40,100);
+                let grd = x.createLinearGradient(150,200,300,550);
+                grd.addColorStop(0, 'rgb(0, 0, 0)');
+                grd.addColorStop(0.200, 'rgb(255, 255, 255)');
+                grd.addColorStop(0.320, 'rgb(255, 0, 255)');
+                grd.addColorStop(0.440, 'rgb(255, 0, 0)');
+                grd.addColorStop(0.560, 'rgb(255, 255, 0)');
+                grd.addColorStop(0.680, 'rgb(0, 255, 0)');
+                grd.addColorStop(0.800, 'rgb(0, 255, 255)');
+                grd.addColorStop(0.850, 'rgb(0, 0, 255)');
+                x.fillStyle = grd;
+                x.fillRect(150,240,40,210);
+                let pic = document.getElementById("pic");
+                let pat = x.createPattern(pic,"repeat");
+                x.fillStyle = pat;
+                x.fillRect(240,150,40,300);
+                x.fillStyle = 'Indigo';
+                x.fillRect(330,100,40,350);
+            }
+            function fun2()
+            {
+                var canvas = document.getElementById("diag");
+                var x = canvas.getContext("2d");
+                x.beginPath();
+                x.arc(180,200,150,0,2*Math.PI);
+                x.fillStyle='black';
+                x.fill();
+
+                x.beginPath();
+                x.arc(180,200, 125,0,2*Math.PI);
+                x.fillStyle='lime';
+                x.fill();
+                
+                x.beginPath();
+                x.arc(180,200, 125,0,Math.PI/180*60);
+                x.lineTo(180,200);
+                x.lineTo(305,200);
+                x.strokeStyle='brown';
+                x.stroke();
+                x.fillStyle='brown';
+                x.fill();
+
+                x.beginPath();
+                x.arc(180,200, 125,-Math.PI/180*80,0);
+                x.lineTo(180,200);
+                x.fillStyle='red';
+                x.fill();
+
+                x.beginPath();
+                x.arc(180,200, 125,-Math.PI/180*140,-Math.PI/180*80);
+                x.lineTo(180,200);
+                x.fillStyle='blue';
+                x.fill();
+
+                x.beginPath();
+                x.arc(180,200, 125,-Math.PI/180*160,-Math.PI/180*120);
+                x.lineTo(180,200);
+                x.fillStyle='yellow';
+                x.fill();
+
+                x.beginPath();
+                x.arc(180,200, 125,-Math.PI/180*200,-Math.PI/180*140);
+                x.lineTo(180,200);
+                x.fillStyle='white';
+                x.fill();
+                
+                x.beginPath();
+                x.arc(180,200, 125,-Math.PI/180*220,-Math.PI/180*180);
+                x.lineTo(180,200);
+                x.fillStyle='indigo';
+                x.fill();
+                
+                x.beginPath();
+                x.arc(180,200, 125,-Math.PI/180*240,-Math.PI/180*220);
+                x.lineTo(180,200);
+                x.fillStyle='pink';
+                x.fill();
+
+                x.fillStyle='brown';
+                x.fillRect(400,100,10,10);
+
+                x.fillStyle='yellow';
+                x.fillRect(400,120,10,10);
+
+                x.fillStyle='blue';
+                x.fillRect(400,140,10,10);
+
+                x.fillStyle='lime';
+                x.fillRect(400,160,10,10);
+
+                x.fillStyle='red';
+                x.fillRect(400,180,10,10);
+                
+                x.fillStyle='white';
+                x.fillRect(400,200,10,10);
+
+                x.fillStyle='indigo';
+                x.fillRect(400,220,10,10);
+
+                x.fillStyle='pink';
+                x.fillRect(400,240,10,10);
+    
+                x.font='10px comic sans ms';
+                x.fillStyle='blue';
+                x.fillText("ОИТ", 415, 110);
+                x.fillText("Физ-ра", 415, 130);
+                x.fillText("Англ.яз", 415, 150);
+                x.fillText("ОС", 415, 170);
+                x.fillText("ОАиП", 415, 190);
+                x.fillText("Матем", 415, 210);
+                x.fillText("АЛОЦВМ", 415, 230);
+                x.fillText("История", 415, 250);
+
+
+                x.font='17px comic sans ms';
+                x.shadowColor = 'black';
+                x.shadowBlur = 1;
+                x.shadowOffsetX = 1;
+                x.shadowOffsetY = 2;
+                x.fillText("Предметы в неделю", 315, 70);
+                
+                x.fillStyle = 'red';
+                x.shadowColor = 'black';
+               
+                x.font = '30px Arial';
+                x.fillText("Диаграмма", 120, 25);
+            }    
+        </script>
+    </head>
+    <body>
+        <button onclick="fun1()">Гистограмма</button>
+        <button onclick="fun2()">Диаграграмма</button>
+        <br/>
+        <canvas id='gist' width='600' height='500'>
+            <img src="12.jpg" id="pic">
+        </canvas>
+        <canvas id='diag' width='600' height='500'></canvas>
+    </body>
+</html>

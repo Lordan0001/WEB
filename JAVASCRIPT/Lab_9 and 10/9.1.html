@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Владислав">
+<meta name="description" content=" Тестовая страница">
+<meta  name ="keywords" content="тест, проверка,html">
+  <title>
+  Главная страница JS
+  </title>
+  <!-- <a href="main/4.main.css">проверка поключения main файла</a><br><br> -->
+    </head>
+
+  <body>
+
+    <img src = "череп.png" width = "266px" height = "166px" id = "t1" ><br>
+    <script>
+    // Задание 1 LR9
+    var elem = document.getElementById("t1");
+    
+    elem.onmousedown = function(e)
+    {
+    
+    elem.style.position = 'absolute';
+    elem.style.left = e.clientX - elem.offsetWidth / 2 + 'px';
+    elem.style.top = e.clientY - elem.offsetHeight / 2 + 'px';
+    
+    
+    function moveAt(e)
+    {
+    elem.style.left = e.clientX - elem.offsetWidth / 2 + 'px' ;
+    elem.style.top = e.clientY - elem.offsetHeight / 2 + 'px';
+    }
+    
+    
+    document.onmousemove = function(e) 
+    {
+    moveAt(e);
+    }
+    
+    elem.onmouseup = function() 
+    {
+    document.onmousemove = null;
+    elem.onmouseup = null;
+    }
+    
+    elem.ondragstart = function() 
+    {
+      return false;
+    }
+    }
+    
+    </script>
+    
+    <text id = "textfortsk2" >ПЕРЕТАЩИ МЕНЯ</text><br>
+    <script>
+      //Задание 2
+    var text = document.getElementById("textfortsk2");
+    
+    text.onmousedown = function(e)
+    {
+    
+    text.style.position = 'absolute';
+    text.style.left = e.clientX - text.offsetWidth / 2 + 'px';
+    text.style.top = e.clientY - text.offsetHeight / 2 + 'px';
+    
+    
+    function moveAt(e)
+    {
+    text.style.left = e.clientX - text.offsetWidth / 2 + 'px' ;
+    text.style.top = e.clientY - text.offsetHeight / 2 + 'px';
+    }
+    
+    
+    document.onmousemove = function(e) 
+    {
+    moveAt(e);
+    }
+    
+    text.onmouseup = function() 
+    {
+    document.onmousemove = null;
+    text.onmouseup = null;
+    }
+    
+    text.ondragstart = function() 
+    {
+      return false;
+    }
+    
+    }
+    
+    
+    
+    </script>
+    
+    <!-- Задание 2 -->
+    
+    <img src = "пуля1.png" id = "vesta" width = "300px" height = "150px" style = "position: absolute; top: 200px;">
+    
+    <script>
+    car = document.getElementById("vesta");
+    car.onclick = function()
+    {
+    let start = Date.now(); 
+    let timer = setInterval(function() {
+    
+      let timePassed = Date.now() - start;
+    
+      if (timePassed >= 5000) {
+        clearInterval(timer); 
+        return;
+      }
+    
+      draw(timePassed);
+    
+    }, 1);
+    
+    function draw(timePassed) {
+      car.style.left = timePassed / 10 + 'px';
+    }
+    }
+    </script>
+    
+    <!-- Задание 3-->
+    <img src = "тарелка1.png" id = "task3" width = "50px" height = "50px" style = "position: absolute; margin-top: 380px;">
+    
+    <script>
+    ball = document.getElementById("task3");
+    ball.onclick = function()
+    {
+    let start = Date.now(); 
+    let timer = setInterval(function() {
+    
+      let timePassed = Date.now() - start;
+    
+      if (timePassed >= 6000) {
+        clearInterval(timer); 
+        return;
+      }
+    
+      draw(timePassed);
+    
+    }, 1);
+    
+    function draw(timePassed) {
+    
+      ball.style.left = timePassed/11 + 'px';
+      ball.style.top = Math.cos(timePassed/100)*35 + 'px';
+      
+    }
+    }
+    </script>
+
+
+<script src="9.main.js">
+</script>
+  </body>
+</html>

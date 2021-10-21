@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml5.xslt"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xml4.xsd">
+<group>
+    <SURNAME>Симакович</SURNAME>
+    <NAME>Влад</NAME>
+	<MARK>4</MARK>
+	<YEAR>2002</YEAR>
+    <SPECIALITY>ИСиТ</SPECIALITY>			
+</group>
+<group>
+    <SURNAME>Финский</SURNAME>
+	<NAME>Даниил</NAME>
+	<MARK>9</MARK>
+	<YEAR>2001</YEAR>		
+    <SPECIALITY>ИСиТ</SPECIALITY>			
+</group>
+<group>
+    <SURNAME>Заяц</SURNAME>
+	<NAME>Роман</NAME>
+	<MARK>6</MARK>
+	<YEAR>2002</YEAR>			
+    <SPECIALITY>ИСиТ</SPECIALITY>			
+</group>
+<group>
+    <SURNAME>Гордеенков</SURNAME>
+	<NAME>Александр</NAME>
+	<MARK>7</MARK>
+	<YEAR>2001</YEAR>			
+    <SPECIALITY>ПОИБМС</SPECIALITY>			
+</group>
+</root>

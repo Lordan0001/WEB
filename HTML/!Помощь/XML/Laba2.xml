@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="xml2.css"?>
+<spec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns = "laba2_sch.xsd">  
+<Specialization>
+    <Information>Информация о специальности ИСиТ</Information>
+    <University>
+        <Name>БГТУ</Name>
+        <Point>320 баллов</Point>
+        <Plan>90 мест</Plan>
+        <City>Минск</City>
+    </University>
+    <University>
+        <Name>БГУиР</Name>
+        <Point>337 баллов</Point>
+        <Plan>60 мест</Plan>
+        <City>Минск</City>
+    </University>
+    <University>
+        <Name>БГУ</Name>
+        <Point>330 баллов</Point>
+        <Plan>30 мест</Plan>
+        <City>Минск</City>
+    </University>
+    <University>
+        <Name>БарГУ</Name>
+        <Point>266 баллов</Point>
+        <Plan>30 мест</Plan>
+        <City>Барановичи</City>
+    </University>
+</Specialization>
+</spec>

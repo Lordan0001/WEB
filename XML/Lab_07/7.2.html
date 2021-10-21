@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SVG_2</title>
+<meta charset = "utf-8">
+  <style>      
+        .col-2 
+        {
+            fill: rgb(33, 40, 104); 
+            stroke:rgb(14, 13, 13);
+            stroke-width: 4px;
+        }  
+
+        .col-3
+        {
+             fill: rgb(110, 124, 94); 
+            stroke:rgb(40, 44, 59);
+            stroke-width: 6px;
+        }      
+   </style>
+</head>
+
+    <body>
+  <!--Задание 4 - 5-->      
+<svg width="1300" height="1300"  >
+<defs>
+    <g>
+		<path id="heart" d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+			c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+			C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+	</g></defs>
+<use xlink:href="#heart" id = "H1" class = "col-2" x = "50px" y = "50px" />
+
+ <animate
+xlink:href="#heart"
+attributeName="stroke-dashoffset"
+from="0"
+to="320"
+dur="15s"
+begin="click"
+value = "0;320;0"
+></animate>
+<animate
+xlink:href="#heart"
+attributeName="stroke-dasharray"
+from="320"
+to="320"
+dur="15s"
+begin="click"
+
+values="320;0;320"
+></animate>
+</svg><br>
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CSS/1.xsl"?>
+<main xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://msiter.ru schema2.xsd">
+    <students>
+        <surname>Симакович</surname>
+        <name>Владислав</name>
+        <patronymic>Витальевич</patronymic>
+        <birthday>17.06.2002</birthday>
+    </students>
+</main>

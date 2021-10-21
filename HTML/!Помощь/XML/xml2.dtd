@@ -1,0 +1,10 @@
+<!DOCTYPE Special[
+<!ELEMENT Specialization (Information,University+)>
+<!ELEMENT University (Name,Point,Plan,City)>
+<!ELEMENT Information (#PCDATA)>
+<!ELEMENT University (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Point (#PCDATA)>
+<!ELEMENT Plan (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+]>

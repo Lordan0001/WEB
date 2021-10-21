@@ -1,0 +1,43 @@
+Specialization{ 
+    display:block;
+    text-align:center;
+    margin:10px 20px 10px 20px;
+    margin-top:12pt;
+    border-style:dotted;
+    border-color:#8C0088;
+    font-size:15pt
+}
+Information{
+    font-style:italic;
+    text-align:center;
+    font-weight:bold;
+    font-size: 24px;
+}    
+Name{
+    font-style:italic;
+    text-align:center
+}    
+Point{
+    display:block;
+    text-align:center;
+    font-weight:bold;
+    border-top:double;
+    border-color:#8C0088
+}
+Plan{
+    display:block;
+    text-align:center;
+    border-top:double;
+    border-color:#8C0088
+}
+City{ 
+    display:block;
+    text-align:center;
+    border-top:double;
+    border-color:#8C0088
+}
+University{
+     display:block;
+     margin:50px 100px;
+     border-style:solid
+}

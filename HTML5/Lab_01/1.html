@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML_5</title>
+<style>
+mark 
+{
+
+    background-color:#151616;
+    color: rgb(44, 29, 126);
+}
+body{
+    background-color:#151616;
+    color: #adadad;
+}
+video 
+{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-left: 510px;
+}
+
+audio
+{
+    margin-left: 40%;
+}
+
+</style>
+</head>
+<body>
+<h2 align = "center">Я, <mark>Белицкий Владислав Дмитриевич</mark>, изучаю HTML5</h2>
+
+<video src = "Marilyn Manson - DON'T CHASE THE DEAD (Official Video).webm" controls = "controls"></video><br>
+
+<audio src = "sweet-dreams.mp3" controls = "controls"></audio><br>
+
+<button onclick = "but()">Узнать местоположение</button>
+
+<script>
+    function but()
+    {
+    navigator.geolocation.getCurrentPosition(
+function (position)
+{
+    alert('Широта: ' + position.coords.latitude +  '\nДолгота: ' + position.coords.longitude);
+}
+    );
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Лаба 9/10(4_5)</title>
+</head>
+<body>
+<form action="" onsubmit="draw()">
+<input type="radio" name="graph" value="1">y = x^2
+<input type="radio" name="graph" value="2">y = x^3
+<input type="radio" name="graph" value="3">y = sin(x)
+<input type="radio" name="graph" value="4">y = cos(x)
+<select name="" id="select">
+<option value="black">Черный</option>
+<option value="green">Зеленый</option>
+<option value="red">Красный</option>
+<option value="blue">Синий</option>
+</select>
+<button type="submit">Начертить график</button>
+</form>
+<script>
+function draw(){
+event.preventDefault();
+
+if(document.getElementById("canvas"))//Удаление старого холста
+document.getElementById("canvas").remove();
+if(document.getElementById("divY"))
+document.getElementById("divY").remove();
+if(document.getElementById("divX"))
+document.getElementById("divX").remove();
+
+let canvas = document.createElement("canvas"),
+graph = event.target.graph.value,
+color = document.getElementById("select").value,
+y,
+ctx = canvas.getContext('2d'),//Возвращает контекст рисования на холсте (2d-двумерный контекст)
+divX = document.body.appendChild(document.createElement("div")),
+divY = document.body.appendChild(document.createElement("div"));
+
+canvas.width = 600;
+canvas.height = 500;
+canvas.style.position = "absolute";
+canvas.style.top = "40px";
+canvas.id = "canvas";
+
+divY.innerHTML = "Y";
+divY.id = "divY";
+divX.innerHTML = "X";
+divX.id = "divX";
+divX.style = "position: absolute; font-size: 20px;";
+divY.style = "position: absolute; font-size: 20px;";
+divY.style.top = 40 + "px";
+divY.style.left = canvas.width / 2 - 20 + "px";
+divX.style.top = canvas.height / 2 + 50 + "px";
+divX.style.left = canvas.width - 10 + "px";
+
+//Нанесение системы координат
+ctx.lineWidth = 1;
+ctx.strokeStyle = "black";
+ctx.moveTo(canvas.width / 2 - 0.5, 0);
+ctx.lineTo(canvas.width / 2 - 0.5, canvas.height);
+ctx.moveTo(0, canvas.height / 2 - 0.5);
+ctx.lineTo(canvas.width, canvas.height / 2 - 0.5);
+
+ctx.moveTo(canvas.width / 2 - 0.5, 0);
+ctx.lineTo(canvas.width / 2 - 5.5, 10.5);
+ctx.moveTo(canvas.width / 2 - 0.5, 0);
+ctx.lineTo(canvas.width / 2 + 5.5, 10.5);
+
+ctx.moveTo(canvas.width, canvas.height / 2 - 0.5);
+ctx.lineTo(canvas.width - 10.5, canvas.height / 2 - 5.5);
+ctx.moveTo(canvas.width, canvas.height / 2 - 0.5);
+ctx.lineTo(canvas.width - 10.5, canvas.height / 2 + 5.5);
+
+ctx.stroke();
+
+ctx.fillStyle = color;
+
+//y = x^2
+if (graph == 1){
+for(let x = -canvas.width / 2; x < canvas.width / 2; x += 0.01){
+y = canvas.height / 2 - 40 * Math.pow(x / 40, 2);
+ctx.fillRect(x + canvas.width / 2 - 0.5, y - 0.5, 1, 1);
+}
+}
+//y = x^3
+if (graph == 2){
+for(let x = -canvas.width / 2; x < canvas.width / 2; x += 0.01){
+y = (canvas.height / 2 - 40 * Math.pow(x / 40, 3));
+ctx.fillRect(x + canvas.width / 2 - 0.5, y - 0.5, 1, 1);
+}
+}
+//y = sin(x)
+if (graph == 3){
+for(let x = -canvas.width / 2; x < canvas.width / 2; x += 0.01){
+y = (canvas.height / 2 - 40 * Math.sin(x / 40));
+ctx.fillRect(x + canvas.width / 2 - 0.5, y - 0.5, 1, 1);
+}
+}
+//y = cos(x)
+if (graph == 4){
+for(let x = -canvas.width / 2; x < canvas.width / 2; x += 0.01){
+y = canvas.height / 2 - 40 * Math.cos(x / 40);
+ctx.fillRect(x + canvas.width / 2 - 0.5, y - 0.5, 1, 1);
+}
+}
+document.body.appendChild(canvas);
+}
+</script>
+</body>
+</html>

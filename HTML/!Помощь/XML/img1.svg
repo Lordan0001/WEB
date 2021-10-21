@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
+    <defs>
+        <path d="M299.08 231.31L262.45 379.64L299.08 379.64L272.92 486.76L372.35 338.43L320.02 338.43L356.65 231.31L299.08 231.31Z" id="a238G2Nybg"></path>
+        <path d="M357.41 55.07C403.7 55.07 441.23 91.8 441.23 137.1C441.23 138.81 441.18 140.52 441.06 142.19C474.5 149.08 499.08 172.16 499.08 199.56C499.08 199.56 499.08 199.56 499.08 199.56C499.08 232.41 463.79 259.03 420.24 259.03C400.47 259.03 242.26 259.03 222.48 259.03C178.94 259.03 143.64 232.41 143.64 199.56C143.64 199.56 143.64 199.56 143.64 199.56C143.64 170.93 170.47 147.02 206.19 141.37C209.4 110.32 236.18 86.09 268.74 86.09C275.9 86.09 282.76 87.26 289.17 89.41C304.4 68.63 329.28 55.07 357.41 55.07Z" id="cwSWyGlUS"></path>
+    </defs>
+    <g><g><g>
+    <use xlink:href="#a238G2Nybg" opacity="0.8" fill="#e9d729" fill-opacity="1"></use>
+    <g>
+    <filter id="shadow11411085" x="253.45" y="222.31" width="127.9" height="274.45" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse">
+        <feComposite in2="SourceAlpha" operator="out"></feComposite>
+        <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+        <feOffset dx="0" dy="1" result="afterOffset"></feOffset>
+        <feFlood flood-color="#ffffff" flood-opacity="0.8"></feFlood>
+        <feComposite in2="afterOffset" operator="in"></feComposite>
+        <feMorphology operator="dilate" radius="1"></feMorphology>
+        <feComposite in2="SourceAlpha" operator="in"></feComposite>
+    </filter>
+    <path d="M299.08 231.31L262.45 379.64L299.08 379.64L272.92 486.76L372.35 338.43L320.02 338.43L356.65 231.31L299.08 231.31Z" id="asfvbhCdq" fill="white" fill-opacity="1" filter="url(#shadow11411085)"></path>
+    </g></g><g><g>
+    <filter id="shadow13925467" x="122.64" y="34.07" width="410.45" height="246.96" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse"><feFlood></feFlood>
+        <feComposite in2="SourceAlpha" operator="in"></feComposite>
+        <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+        <feOffset dx="13" dy="1" result="afterOffset"></feOffset>
+        <feFlood flood-color="#000000" flood-opacity="0.5"></feFlood>
+        <feComposite in2="afterOffset" operator="in"></feComposite>
+        <feMorphology operator="dilate" radius="1"></feMorphology>
+        <feComposite in2="SourceAlpha" operator="out"></feComposite>
+    </filter>
+    <path d="M357.41 55.07C403.7 55.07 441.23 91.8 441.23 137.1C441.23 138.81 441.18 140.52 441.06 142.19C474.5 149.08 499.08 172.16 499.08 199.56C499.08 199.56 499.08 199.56 499.08 199.56C499.08 232.41 463.79 259.03 420.24 259.03C400.47 259.03 242.26 259.03 222.48 259.03C178.94 259.03 143.64 232.41 143.64 199.56C143.64 199.56 143.64 199.56 143.64 199.56C143.64 170.93 170.47 147.02 206.19 141.37C209.4 110.32 236.18 86.09 268.74 86.09C275.9 86.09 282.76 87.26 289.17 89.41C304.4 68.63 329.28 55.07 357.41 55.07Z" id="b3pAdKQx62" fill="white" fill-opacity="1" filter="url(#shadow13925467)"></path></g>
+    <use xlink:href="#cwSWyGlUS" opacity="1" fill="#7ea1c2" fill-opacity="1"></use>
+    </g></g></g>
+    </svg>

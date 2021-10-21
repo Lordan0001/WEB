@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<script>
+		function getCoordinates(){
+			navigator.geolocation.getCurrentPosition(showCoordinates);
+		}
+		function showCoordinates(position){
+			document.write("Широта: " + position.coords.latitude + "<br/>");
+			document.write("Долгота: " + position.coords.longitude + "<br/>"); 
+		}
+	</script>
+</head>
+
+<body>
+	<h1 align = "center">Я, <mark>Гордеенков Александр Сергеевич</mark>, изучаю HTML5</h1>
+	<video src = "тачка.mp4" controls = "controls" height = "400" width = "600"></video><br><br>
+	<audio src = "Леша Свик - Беззаботные дни.mp3" controls = "controls"></audio><br><br>
+	<input type = "button" value = "Координаты" onclick = "getCoordinates()">
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="root">
+      <xs:complexType>
+         <xs:group>
+		      <xs:element name="SURNAME" type="xs:string"/>
+            <xs:element name="NAME" type="xs:string"/>
+            <xs:element name="MARK" type="xs:string"/>
+			   <xs:element name="YEAR" type="xs:string"/>
+         </xs:group>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

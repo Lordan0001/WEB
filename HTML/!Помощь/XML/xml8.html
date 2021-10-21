@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="UTF-8">
+  <style>
+  	image {
+        clip-path: url(#my-path);
+    }
+  </style>
+  </head>
+  <body>
+  	 <svg width="1380" height="1040">
+  	<text x = "500" y = "50" textLength = "400" fill = "teal" transform = "rotate(20 250, 40)" style = "font-size: 60px">Text</text>
+
+  	<text>
+  		<tspan x = "50" y = "80" dy = "200" style = "font-family: 'footlight mt light'; font-size: 40px; text-decoration: line-through; " fill = "RoyalBlue">Tspan1</tspan>
+  		<tspan x = "50" dy = "70" style = "font-family: 'Leckerli One', cursive; font-size: 60px; text-decoration: underline; " fill = "MediumSlateBlue">Tspan2</tspan>
+  	</text>
+
+  	<defs> 
+		<linearGradient id = "MyGradient">
+		 <stop offset = "30%" stop-color = "Indigo"/>
+		 <stop offset = "70%" stop-color = "MediumPurple"/>
+		</linearGradient> 
+	</defs>	
+	 <text x = "100" y = "500" fill="url(#MyGradient)" textLength = "800" style = "font-size: 70px">Заливка градиентом</text>
+	  <defs> 
+      <clippath id="my-path">
+        <text x="100" y="800" font-size="150">Заливка картинкой</text>
+      </clippath>
+    </defs>
+    <image xlink:href="1.jpg" clip-path="url(#test)" width="100%" height="100%" preserveAspectRatio="none" />
+  	<defs y = "150">
+		<path id="idname" fill="LightSkyBlue" stroke="black" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,
+131.91,264,150c40.67,14.43,108.57-6.91,229-145"/>
+	</defs>
+		<use xlink:href="#idname"/>
+		<text x="0" y="0">
+		<textPath xlink:href="#idname" style = "font-size: 25px">
+			Просто текст.Просто текст.Просто текст.Просто не читай.
+        </textPath>
+		<img src="img2.svg">
+        <img src="img1.svg"> 
+		<img src="dop2.svg">
+  	 </svg>
+  	 </body>
+</html>

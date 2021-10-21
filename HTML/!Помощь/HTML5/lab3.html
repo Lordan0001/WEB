@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css">
+<style>
+html{
+    height: 100%;
+    width: 100%;
+    background: aqua;
+}
+#table
+{
+    display: flex;
+    justify-content: center;
+    border: 5px dashed rgb(223, 57, 187);
+    margin-left: 2px;
+    height: 70px;
+    width: 99%;
+    text-align: center;
+    padding: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+    </style>
+</head>
+    <header>
+        <nav>
+            <figure>
+                <img src="kotik.jpg" style="padding: 0 455px; width:400px; height:400px" />
+               
+            </figure>
+        </nav>
+    </header>
+<body>
+
+    <label for="surname">Фамилия:</label><br />
+    <input type="text" placeholder="Фамилия" id="surname" required/><br />
+
+    <label for="name">Имя:</label><br />
+    <input type="text" placeholder="Имя" id="name" required/><br />
+
+    <label for="patronymic">Отчество:</label><br />
+    <input type="text" placeholder="Отчество" id="patronymic" required/><br />
+
+    <label for="email">E-mail:</label><br />
+    <input type="email" placeholder="E-mail" id="email" required/><br />
+
+    <label for="url">URL:</label><br />
+    <input type="url" placeholder="url" id="url" /><br />
+
+    <label for="tel">Телефон:</label><br />
+    <input type="tel" placeholder="tel" id="tel" required/><br />
+
+    <label for="course">Курс:</label><br />
+    <input type="number" placeholder="course" id="course" min="1" max="4" step="1" required/><br />
+
+    <label for="group">Группа:</label><br />
+    <input type="range" placeholder="group" id="group" min="1" max="12" step="1" /><br />
+
+	<label for="search">Поиск:</label><br />
+    <input type="search" placeholder="search" id="search"/><br />
+
+    <label for="color">Цвета:</label><br />
+    <input type="color" placeholder="color" id="color"/><br /><br />
+
+    <input type="button" id="button" value="Вывести" onclick="res()" />
+
+<script type="text/javascript">
+    function res() {
+    let table = document.getElementById("table");
+    let firstname = document.getElementById("surname").value;
+    let surname = document.getElementById("name").value;
+    let patronymic = document.getElementById("patronymic").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("tel").value;
+    let course = document.getElementById("course").value;
+    let group = document.getElementById("group").value;
+    let color = document.getElementById("color").value;
+    document.getElementById("table").style.color = color;
+    table.innerHTML = `${surname} ${firstname} ${patronymic}<br />`;
+    table.innerHTML += `E-mail: ${email}<br />`;
+    table.innerHTML += `Телефон: ${phone}<br />`;
+    table.innerHTML += `Курс: ${course}<br />`;
+    table.innerHTML += `Группа: ${group}<br />`;
+}
+</script>
+</body>
+    <footer id="table">
+	</footer>
+</html>

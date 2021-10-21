@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE University SYSTEM "xml3.dtd">
+<?xml-stylesheet type="text/xsl" href="xml3.xslt"?>   
+<Specialization>
+    <Information>Информация о специальности ИСиТ</Information>
+    <University>
+        <Name>БГТУ</Name>
+        <Point>320 баллов</Point>
+        <Plan>90 мест</Plan>
+        <City>Минск</City>
+    </University>
+    <University>
+        <Name>БГУиР</Name>
+        <Point>337 баллов</Point>
+        <Plan>60 мест</Plan>
+        <City>Минск</City>
+    </University>
+    <University>
+        <Name>БГУ</Name>
+        <Point>330 баллов</Point>
+        <Plan>30 мест</Plan>
+        <City>Минск</City>
+    </University>
+    <University>
+        <Name>БарГУ</Name>
+        <Point>266 баллов</Point>
+        <Plan>30 мест</Plan>
+        <City>Барановичи</City>
+    </University>
+</Specialization>

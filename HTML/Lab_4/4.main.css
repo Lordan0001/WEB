@@ -1,0 +1,71 @@
+h1,h2,h3 {
+  color:#859190;
+  font-family: Arial;
+}
+span{
+  color:grey;
+  font-family: Times;
+}
+.name:hover{
+  color:#18423d;
+
+}
+li:first-child{
+  color:#bdcccb;
+}
+.a{
+  color :#2e5759;
+  font-family: Helvetica;
+  text-align: center;
+    vertical-align: middle;
+}
+.b{
+  color :#727c7c;
+  font-family: Verdana;
+}
+.c{
+  color :#1eadb5;
+  font-family: Georgia;
+  text-align: right;
+}
+#second{
+  color : blue;
+  font-family:Arial  ;
+}
+#third{
+  color : white;
+  font-family: Helvetica;
+}
+body{
+  background-color:#151616;
+}
+
+.name{
+  color: white;
+  text-decoration: underline;
+}
+.name::before{
+  content: 'студент II курса, ';
+color: #568cdd;
+}
+.name::after{
+  content: ', уже ';
+color: #568cdd;
+}
+.first{
+  color:#c8ccce;
+}
+.second{
+  color:#a1d6ed;
+
+}
+.third{
+  color:#76c9ed;
+
+}
+ul li{
+    list-style: none;
+    background: url(mark3.png) no-repeat left 50%;
+    background-size: 20px;
+    padding-left: 25px;
+}

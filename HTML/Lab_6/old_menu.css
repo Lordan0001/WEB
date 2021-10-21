@@ -1,0 +1,43 @@
+body{
+  background: #b57e7e;
+  list-style: none;
+}
+#main{
+  background: black;
+  color:white;
+  padding:0;
+  margin:0;
+  list-style: none;
+  position: relative;
+  width: 644px;
+  right: -250px;
+  bottom: -50px;
+}
+li{
+    display:inline-block;
+    border: 2px solid #775f5e;
+    line-height: 60px;
+    width: 100px;
+    text-align: center;
+}
+/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование */
+       nav ul ul {
+   			    display: none;
+   			    position: absolute;
+   			    top: 100%;
+   			}
+
+   			/* отображаем выпадающий список при наведении */
+   			nav ul li:hover > ul {
+   			    display:inherit;
+            background: black;
+   			}
+
+   			/* первый уровень выпадающего списка */
+   			nav ul ul li {
+   			    width:100px;
+   			    float:none;
+   			    display:list-item;
+   			    position: relative;
+   			}

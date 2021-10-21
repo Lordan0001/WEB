@@ -1,0 +1,26 @@
+#telegram{
+  content: url('telegram3.png');
+  width: 50px;
+  height: 50px;
+  transform: rotate(.4turn);
+  position: relative;
+  animation-iteration-count: 1;
+  animation-name:telegram;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+  @keyframes telegram {
+    0%      {left: 0px; right: 0px; top:0px; transform: rotate(.35turn);}
+    25%     {left: 500px; right: 500px; top: 500px; transform: rotate(.35turn);}
+    30%     {left: 500px; right: 500px; top: 500px; transform: rotate(0turn);}
+
+    50%     {left: 500px; right: 500px; top: 0px; transform: rotate(0turn);}
+    55%     {left: 500px; right: 500px; top: 0px; transform: rotate(-135deg);}
+
+    75%     {left: 0px; right: 0px; top: 500px; transform: rotate(-145deg)}
+    80%     {left: 0px; right: 0px; top: 500px; transform: rotate(0turn)}
+
+    95%     {left: 0px; right: 0px; top: 0px; transform: rotate(0turn)}
+    100%    {transform: rotate(.35turn)}
+}
